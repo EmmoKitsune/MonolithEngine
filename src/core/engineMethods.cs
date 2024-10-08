@@ -35,6 +35,7 @@ public class MonolithCore
     public static void update()
     {
         userMethods.update();
+        userEntities.update();
     }
 
     public static void draw()
@@ -44,6 +45,7 @@ public class MonolithCore
         Raylib.ClearBackground(Color.Black);
 
         userMethods.draw();
+        userEntities.draw();
 
         if (engineSetting.debugMenu)
         {
@@ -56,6 +58,7 @@ public class MonolithCore
     public static void shutdown(int code)
     {
         userMethods.shutdown();
+        userEntities.shutdown();
         if (engineSetting.debugMenu)
         {
             MonolithDebug.shutdown();

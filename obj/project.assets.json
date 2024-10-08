@@ -276,11 +276,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/emmokitsune/MonolithEnginev2/MonolithEnginev2.csproj",
+      "projectUniqueName": "/home/emmokitsune/Documents/GitHub/MonolithEngine/MonolithEnginev2.csproj",
       "projectName": "MonolithEnginev2",
-      "projectPath": "/home/emmokitsune/MonolithEnginev2/MonolithEnginev2.csproj",
+      "projectPath": "/home/emmokitsune/Documents/GitHub/MonolithEngine/MonolithEnginev2.csproj",
       "packagesPath": "/home/emmokitsune/.nuget/packages/",
-      "outputPath": "/home/emmokitsune/MonolithEnginev2/obj/",
+      "outputPath": "/home/emmokitsune/Documents/GitHub/MonolithEngine/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/emmokitsune/.nuget/NuGet/NuGet.Config"

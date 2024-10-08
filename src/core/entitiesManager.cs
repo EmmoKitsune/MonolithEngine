@@ -22,4 +22,26 @@ public class EntitiesManager
             entity.setup();
         }
     }
+
+    public void callUpdateMethod()
+    {
+        foreach (var entity in entityRegister)
+        {
+            entity.update();
+        }
+    }
+    public void callDrawMethod()
+    {
+        foreach (var entity in entityRegister)
+        {
+            entity.draw();
+        }
+    }
+    public void callShutdownMethod()
+    {
+        foreach (var entity in entityRegister)
+        {
+            entity.shutdown();
+        }
+    }
 }
