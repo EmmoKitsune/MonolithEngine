@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "v5zYficwmsIYOmmfF++EcQ/5I9l9eGx3+G6F0u0gVHwGPkfrwEX6LCC8BMWLn9r6UECkAsU46ZfXzJS7n6GxMw==",
+  "success": true,
+  "projectFilePath": "/home/emmokitsune/Documents/GitHub/MonolithEngine/rlImGui/rlImGui.csproj",
+  "expectedPackageFiles": [
+    "/home/emmokitsune/.nuget/packages/imgui.net/1.90.9.1/imgui.net.1.90.9.1.nupkg.sha512",
+    "/home/emmokitsune/.nuget/packages/raylib-cs/6.1.1/raylib-cs.6.1.1.nupkg.sha512",
+    "/home/emmokitsune/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/home/emmokitsune/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/home/emmokitsune/.nuget/packages/system.runtime.compilerservices.unsafe/4.4.0/system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+    "/home/emmokitsune/.nuget/packages/microsoft.netcore.app.ref/6.0.33/microsoft.netcore.app.ref.6.0.33.nupkg.sha512",
+    "/home/emmokitsune/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.33/microsoft.aspnetcore.app.ref.6.0.33.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("2024 Jeffery Myers")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Bindings to use ImGui.net with raylib-cs")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0+6716ae5e56cbad8ad50410fcfda4c5f3b25fa23a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.0+fe34244e85cf357affc7bc9ae8443047d765061f")]
 [assembly: System.Reflection.AssemblyProductAttribute("rlImGui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("rlImGui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.1.0")]

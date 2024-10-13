@@ -5,9 +5,10 @@ public static class userEntities
 {
     public class TESTEntity : MonolithCore.IBaseEntity
     {
+        string entName = "TESTEntity";
         public void setup()
         {
-            Console.WriteLine("Hello from TESTEntity");
+            Console.WriteLine(entName + " Inited;");
         }
         public void update()
         { }
@@ -17,7 +18,7 @@ public static class userEntities
         }
         public void shutdown()
         {
-            Console.WriteLine("Bye from TESTEntity");
+            Console.WriteLine(entName + "shutdown;");
         }
     }
 
