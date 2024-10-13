@@ -1,46 +1,46 @@
 using Raylib_cs;
 using System;
 
-public static class userEntities
+public static class UserEntities
 {
     public class TESTEntity : MonolithCore.IBaseEntity
     {
-        string entName = "TESTEntity";
-        public void setup()
+        readonly string entName = "TESTEntity";
+        public void Setup()
         {
             Console.WriteLine(entName + " Inited;");
         }
-        public void update()
+        public void Update()
         { }
-        public void draw()
+        public void Draw()
         {
             Raylib.DrawRectangle(400, 400, 30, 30, Color.Red);
         }
-        public void shutdown()
+        public void Shutdown()
         {
             Console.WriteLine(entName + "shutdown;");
         }
     }
 
-    public static void init()
+    public static void Init()
     {
         var entity1 = new TESTEntity();
 
         MonolithCore.entityManager.AddEntity(entity1);
 
-        MonolithCore.entityManager.callInitMethod();
+        MonolithCore.entityManager.CallInitMethod();
     }
 
-    public static void update()
+    public static void Update()
     {
-        MonolithCore.entityManager.callUpdateMethod();
+        MonolithCore.entityManager.CallUpdateMethod();
     }
-    public static void draw()
+    public static void Draw()
     {
-        MonolithCore.entityManager.callDrawMethod();
+        MonolithCore.entityManager.CallDrawMethod();
     }
-    public static void shutdown()
+    public static void Shutdown()
     {
-        MonolithCore.entityManager.callShutdownMethod();
+        MonolithCore.entityManager.CallShutdownMethod();
     }
 }

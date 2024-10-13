@@ -3,17 +3,17 @@ using System;
 
 public class MonolithCore
 {
-    public static EntitiesManager entityManager = new EntitiesManager();
+    public static EntitiesManager entityManager = new();
 
     public interface IBaseEntity
     {
-        public void setup();
-        public void update();
-        public void draw();
-        public void shutdown();
+        public void Setup();
+        public void Update();
+        public void Draw();
+        public void Shutdown();
     }
 
-    public static void setup()
+    public static void Setup()
     {
         Console.WriteLine("Welcome to Monolith version " + engineSetting.monolithVersion);
 
@@ -28,24 +28,24 @@ public class MonolithCore
             MonolithDebug.setup();
         }
 
-        userMethods.setup();
-        userEntities.init();
+        userMethods.Setup();
+        UserEntities.Init();
     }
 
-    public static void update()
+    public static void Update()
     {
-        userMethods.update();
-        userEntities.update();
+        userMethods.Update();
+        UserEntities.Update();
     }
 
-    public static void draw()
+    public static void Draw()
     {
         Raylib.BeginDrawing();
 
         Raylib.ClearBackground(Color.Black);
 
-        userMethods.draw();
-        userEntities.draw();
+        userMethods.Draw();
+        UserEntities.Draw();
 
         if (engineSetting.debugMenu)
         {
@@ -55,10 +55,10 @@ public class MonolithCore
         Raylib.EndDrawing();
     }
 
-    public static void shutdown(int code)
+    public static void Shutdown(int code)
     {
-        userMethods.shutdown();
-        userEntities.shutdown();
+        userMethods.Shutdown();
+        UserEntities.Shutdown();
         if (engineSetting.debugMenu)
         {
             MonolithDebug.shutdown();

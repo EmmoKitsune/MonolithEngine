@@ -7,7 +7,7 @@ public class EntitiesManager
 
     public EntitiesManager()
     {
-        entityRegister = new List<MonolithCore.IBaseEntity>();
+        entityRegister = [];
     }
 
     public void AddEntity(MonolithCore.IBaseEntity entity)
@@ -15,33 +15,33 @@ public class EntitiesManager
         entityRegister.Add(entity);
     }
 
-    public void callInitMethod()
+    public void CallInitMethod()
     {
         foreach (var entity in entityRegister)
         {
-            entity.setup();
+            entity.Setup();
         }
     }
 
-    public void callUpdateMethod()
+    public void CallUpdateMethod()
     {
         foreach (var entity in entityRegister)
         {
-            entity.update();
+            entity.Update();
         }
     }
-    public void callDrawMethod()
+    public void CallDrawMethod()
     {
         foreach (var entity in entityRegister)
         {
-            entity.draw();
+            entity.Draw();
         }
     }
-    public void callShutdownMethod()
+    public void CallShutdownMethod()
     {
         foreach (var entity in entityRegister)
         {
-            entity.shutdown();
+            entity.Shutdown();
         }
     }
 }

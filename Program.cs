@@ -2,15 +2,15 @@ using Raylib_cs;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        MonolithCore.setup();
+        MonolithCore.Setup();
 
         while (!Raylib.WindowShouldClose())
         {
-            MonolithCore.update();
-            MonolithCore.draw();
+            MonolithCore.Update();
+            MonolithCore.Draw();
         }
-        MonolithCore.shutdown(0);
+        MonolithCore.Shutdown(0);
     }
 }
