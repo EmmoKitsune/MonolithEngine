@@ -5,16 +5,30 @@ public static class UserEntities
 {
     public class TESTEntity : MonolithCore.IBaseEntity
     {
-        readonly string entName = "TESTEntity";
+        public string entName = "TESTEntity";
+        public int width = 30;
+        public int height = 30;
+
+        public int posX = 400;
+        public int posY = 400;
+
         public void Setup()
         {
             Console.WriteLine(entName + " Inited;");
         }
         public void Update()
-        { }
+        { 
+            if(posX < engineSetting.windowWidth + width)
+            {
+                posX += 2;
+            }else
+            {
+                posX = (0-width);
+            }
+        }
         public void Draw()
         {
-            Raylib.DrawRectangle(400, 400, 30, 30, Color.Red);
+            Raylib.DrawRectangle(posX, posY, width, height, Color.Red);
         }
         public void Shutdown()
         {
@@ -25,8 +39,12 @@ public static class UserEntities
     public static void Init()
     {
         var entity1 = new TESTEntity();
+        var entity2 = new TESTEntity();
+
+        entity2.posX = 100;
 
         MonolithCore.entityManager.AddEntity(entity1);
+        MonolithCore.entityManager.AddEntity(entity2);
 
         MonolithCore.entityManager.CallInitMethod();
     }
