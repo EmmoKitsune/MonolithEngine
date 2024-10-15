@@ -39,9 +39,10 @@ public static class UserEntities
     public static void Init()
     {
         var entity1 = new TESTEntity();
-        var entity2 = new TESTEntity();
-
-        entity2.posX = 100;
+        var entity2 = new TESTEntity
+        {
+            posX = 100
+        };
 
         MonolithCore.entityManager.AddEntity(entity1);
         MonolithCore.entityManager.AddEntity(entity2);
