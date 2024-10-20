@@ -5,6 +5,8 @@ public class MonolithCore
 {
     public static EntitiesManager entityManager = new();
 
+    public static float RuntimeTimer = 0.0f;
+
     public interface IBaseEntity
     {
         public void Setup();
@@ -36,6 +38,7 @@ public class MonolithCore
 
     public static void Update()
     {
+        RuntimeTimer += Raylib.GetFrameTime();
         userMethods.Update();
         UserEntities.Update();
     }

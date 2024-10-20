@@ -22,6 +22,7 @@ public static class MonolithDebug
             ImGui.Separator();
             ImGui.Text("FPS: " + Raylib.GetFPS().ToString());
             ImGui.Text(engineSetting.windowWidth.ToString() + "px X " + engineSetting.windowHeight.ToString() + "px");
+            ImGui.Text("Runtime: " + MonolithCore.RuntimeTimer.ToString("F0") + " seconds");
         }
 
         ImGui.End();
