@@ -14,7 +14,7 @@ public static class UserEntities
 
         public void Setup()
         {
-            Console.WriteLine(entName + " Inited;");
+            MonolithDebug.PrintAtConsole(entName + " Inited;",0);
         }
         public void Update()
         { 
@@ -23,7 +23,7 @@ public static class UserEntities
                 posX += 2;
             }else
             {
-                posX = (0-width);
+                posX = 0-width;
             }
         }
         public void Draw()
@@ -32,7 +32,7 @@ public static class UserEntities
         }
         public void Shutdown()
         {
-            Console.WriteLine(entName + "shutdown;");
+            MonolithDebug.PrintAtConsole(entName + "shutdown;",0);
         }
     }
 

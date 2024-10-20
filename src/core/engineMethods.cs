@@ -15,7 +15,7 @@ public class MonolithCore
 
     public static void Setup()
     {
-        Console.WriteLine("Welcome to Monolith version " + engineSetting.monolithVersion);
+        MonolithDebug.PrintAtConsole("Welcome to Monolith version " + engineSetting.monolithVersion,0);
 
         Raylib.InitWindow(engineSetting.windowWidth, engineSetting.windowHeight, engineSetting.windowTitle);
 
@@ -27,6 +27,8 @@ public class MonolithCore
         {
             MonolithDebug.setup();
         }
+
+        MonolithDebug.PrintAtConsole("Engine loaded!",0);
 
         userMethods.Setup();
         UserEntities.Init();
@@ -49,7 +51,7 @@ public class MonolithCore
 
         if (engineSetting.debugMenu)
         {
-            MonolithDebug.drawDebugMenu();
+            MonolithDebug.DrawDebugMenu();
         }
 
         Raylib.EndDrawing();
@@ -61,7 +63,7 @@ public class MonolithCore
         UserEntities.Shutdown();
         if (engineSetting.debugMenu)
         {
-            MonolithDebug.shutdown();
+            MonolithDebug.Shutdown();
         }
         Raylib.CloseWindow();
 
